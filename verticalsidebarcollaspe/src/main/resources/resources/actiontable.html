@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Dropdown Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+    .action-button
+     {
+	    background-color: transparent;
+	    border: none;
+	    color: black;
+	    font-size: 20px;
+    }
+  </style>
+</head>
+
+<body ng-controller="myCtrl">
+
+<div class="container">
+  <table class="table table-striped">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in items">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.description }}</td>
+          <td>
+	            <div class="dropdown">
+	              <button class="btn btn-secondary action-button" type="button" id="dropdownMenuButton{{$index}}" data-bs-toggle="dropdown" aria-expanded="false">
+	                ...
+	              </button>
+	              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton{{$index}}">
+	                <li><a class="dropdown-item" href="#">View MetaData</a></li>
+	                <li><a class="dropdown-item" href="#">Download Metadata JSON</a></li>
+	                <li><a class="dropdown-item" href="#">Download Software</a></li>
+	                <li><a class="dropdown-item" href="#">Re-Upload Metadata</a></li>
+	                <li><a class="dropdown-item" href="#">Re-Upload Software</a></li>
+	                <li><a class="dropdown-item" href="#">Delete</a></li>
+	              </ul>
+	            </div>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+
+<script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+  // Dummy API response
+  var dummyApiResponse = [
+    { id: 1, name: "Item 1", description: "Description of Item 1" },
+    { id: 2, name: "Item 2", description: "Description of Item 2" },
+    { id: 3, name: "Item 3", description: "Description of Item 3" },
+    { id: 4, name: "Item 4", description: "Description of Item 4" },
+    { id: 5, name: "Item 5", description: "Description of Item 5" },
+    { id: 6, name: "Item 6", description: "Description of Item 6" },
+    
+  ];
+
+  $scope.items = dummyApiResponse;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collapsible Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+      background-color: black;
+    }
+    
+    .card-body {
+      background-color:white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#toggleAll').click(function() {
+        $('.collapse').collapse('toggle');
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container mt-4">
+  <input id="toggleAll" type="image" src="http://localhost:8087/menu3.png" alt="menu Image"  width="100" height="48"/>  
+       <!--  <button id="toggleAll"  type="button">
+             <img src="http://localhost:8087/menu1.png" alt="menu Image" style="width: 30px; height: 30px; margin-right: 5px;"/>
+    </button> -->
+    <div class="row">
+      <div class="col">
+        <div class="collapse">
+          <div class="card card-body">
+            Card Content 1
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse">
+          <div class="card card-body">
+            Card Content 2
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse">
+          <div class="card card-body">
+            Card Content 3
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse">
+          <div class="card card-body">
+            Card Content 4
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

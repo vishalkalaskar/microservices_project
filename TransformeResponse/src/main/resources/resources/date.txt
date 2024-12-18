@@ -1,0 +1,125 @@
+{
+    "metadata": {
+        "desired": {
+            "dateOfSale": {
+                "timestamp": 1681708466
+            },
+            "syncAttributes": {
+                "periodicSync": {
+                    "timestamp": 1681884271
+                },
+                "syncOnChange": {
+                    "timestamp": 1681884271
+                },
+                "syncPeriodicity": {
+                    "timestamp": 1681884271
+                }
+            }
+        },
+        "reported": {
+            "dateOfSale": {
+                "timestamp": 1681708039
+            },
+            "interfaceVersion": {
+                "timestamp": 1680759917
+            },
+            "lastSyncTime": {
+                "timestamp": 1680759917
+            },
+            "syncAttributes": {
+                "periodicSync": {
+                    "timestamp": 1680759917
+                },
+                "syncOnChange": {
+                    "timestamp": 1680759917
+                },
+                "syncPeriodicity": {
+                    "timestamp": 1681722800
+                }
+            },
+            "tcmAvailability": {
+                "timestamp": 1680759917
+            },
+            "vehMetadata": {
+                "driverPos": {
+                    "timestamp": 1680759917
+                },
+                "vehIdentPlat": {
+                    "timestamp": 1680759917
+                },
+                "vehLaunchEdition": {
+                    "timestamp": 1680759917
+                },
+                "vehMfgDatenTime": {
+                    "timestamp": 1680759917
+                },
+                "vehMktCountryCode": {
+                    "timestamp": 1680759917
+                },
+                "vehModelYr": {
+                    "timestamp": 1680759917
+                },
+                "vehName": {
+                    "timestamp": 1680759917
+                },
+                "vehPwrTrain": {
+                    "timestamp": 1680759917
+                },
+                "vehVariant": {
+                    "timestamp": 1680759917
+                },
+                "vehVc": {
+                    "timestamp": 1680759917
+                },
+                "vehiceIceFuelType": {
+                    "timestamp": 1680759917
+                },
+                "vin": {
+                    "timestamp": 1680759917
+                }
+            }
+        }
+    },
+    "state": {
+        "delta": {
+            "syncAttributes": {
+                "syncPeriodicity": 13
+            }
+        },
+        "desired": {
+            "dateOfSale": "2027-10-05",
+            "syncAttributes": {
+                "periodicSync": "OFF",
+                "syncOnChange": "ON",
+                "syncPeriodicity": 13
+            }
+        },
+        "reported": {
+            "dateOfSale": "2027-10-05",
+            "interfaceVersion": 1,
+            "lastSyncTime": 1656385709706,
+            "syncAttributes": {
+                "periodicSync": "OFF",
+                "syncOnChange": "ON",
+                "syncPeriodicity": 12
+            },
+            "tcmAvailability": "present",
+            "vehMetadata": {
+                "driverPos": "RHD",
+                "vehIdentPlat": "<vehicle identification platform>",
+                "vehLaunchEdition": "<vehicle launch edition>",
+                "vehMfgDatenTime": "<YYYYMMDDHHMMSSMSCM>",
+                "vehMktCountryCode": "<vehicle manufacturing country code>",
+                "vehModelYr": "Jul-2022",
+                "vehName": "<vehicle name>",
+                "vehPwrTrain": "ICE",
+                "vehVariant": "<vehicle variant>",
+                "vehVc": "54120927R",
+                "vehiceIceFuelType": "Petrol",
+                "vin": "MAT634003MPKM2123"
+            }
+        }
+    },
+    "timestamp": 1681885688,
+    "version": 51
+}
